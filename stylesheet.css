@@ -47,6 +47,52 @@ table {
 	border-spacing: 0;
 }
 
-h1 {
-    font-size: 20px;
+body {
+	display: flex;
+	flex-direction: column;
+	background-color: black;
+	height: 100%;
+}
+
+.content {
+	display: flex;
+	justify-content: space-between;
+	height: 80%;
+	overflow: auto;
+}
+
+.playlists {
+	background-color: rgb(19, 23, 54);
+	color: white;
+	width: 23%;
+}
+
+.song-wrapper {
+	background-color: rgb(22, 27, 64);
+	color: white;
+	width: 50%;
+	
+}
+
+.right-sidebar {
+	background-color: rgb(19, 23, 54);
+	width: 23%;
+	color: white;
+}
+
+.song-wrapper h2 {
+	border-bottom: 1px solid grey;
+	padding: 0 10px;
+}
+
+.song:hover {
+	background-color: rgb(102, 106, 133);
+}
+
+footer {
+	display: flex;
+	justify-content: space-between;
+	background-color: black;
+	color: white;
+	height: 20%;
 }
