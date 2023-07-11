@@ -74,6 +74,12 @@ body {
 .playlist {
 	width: 95%;
 	margin: 0 auto;
+	padding: 5vh 0;
+}
+
+.playlist:hover {
+	background-color: rgb(102, 106, 133);
+	border-radius: 5px;
 }
 
 .song-wrapper {
