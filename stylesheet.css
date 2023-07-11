@@ -116,6 +116,11 @@ body {
 	border-radius: 5px;
 }
 
+.queue {
+	width: 95%;
+	margin: 0 auto;
+}
+
 footer {
 	display: flex;
 	justify-content: space-between;
