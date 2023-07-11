@@ -48,45 +48,72 @@ table {
 }
 
 body {
-	display: flex;
-	flex-direction: column;
 	background-color: black;
-	height: 100%;
 }
 
 .content {
 	display: flex;
-	justify-content: space-between;
-	height: 80%;
-	overflow: auto;
+	justify-content: space-evenly;
+	max-height: 89vh;
+	padding-top: 1vh;
 }
 
 .playlists {
-	background-color: rgb(19, 23, 54);
+	background-color: rgb(27, 27, 34);
 	color: white;
-	width: 23%;
+	flex-grow: 1;
+	flex-shrink: 2;
+	max-width: 18%;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+
+.playlist {
+	width: 95%;
+	margin: 0 auto;
 }
 
 .song-wrapper {
-	background-color: rgb(22, 27, 64);
+	background-color: rgb(27, 27, 34);
 	color: white;
-	width: 50%;
-	
+	flex-grow: 5;
+	flex-shrink: 0;
+	max-width: 55%;
+	overflow: hidden;
+	border-radius: 10px;
 }
 
 .right-sidebar {
-	background-color: rgb(19, 23, 54);
-	width: 23%;
+	background-color: rgb(27, 27, 34);
+	flex-grow: 2;
+	flex-shrink: 1;
+	max-width: 25%;
 	color: white;
+	border-radius: 10px;
 }
 
-.song-wrapper h2 {
+.title {
 	border-bottom: 1px solid grey;
-	padding: 0 10px;
+	width: 95%;
+	margin: 0 auto;
+	padding: 10px 1%;
+}
+
+.song {
+	width: 95%;
+	margin: 0 auto;
+	padding-left: 1%;
+}
+
+.song-wrapper:hover {
+	overflow: auto;
 }
 
 .song:hover {
 	background-color: rgb(102, 106, 133);
+	border-radius: 5px;
 }
 
 footer {
@@ -94,5 +121,9 @@ footer {
 	justify-content: space-between;
 	background-color: black;
 	color: white;
-	height: 20%;
+	max-height: 10vh;
+}
+
+footer div {
+	padding-top: 1vh;
 }
