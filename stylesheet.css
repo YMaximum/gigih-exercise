@@ -48,6 +48,10 @@ table {
 }
 
 /* css starts here */
+html, body {
+	font-family: 'Roboto', sans-serif;
+}
+
 body {
 	background-color: black;
 }
@@ -114,6 +118,7 @@ body {
 	padding-left: 1%;
 	padding-top: 1vh;
 	padding-bottom: 1vh;
+	display: flex;
 }
 
 .song-wrapper:hover {
@@ -123,6 +128,26 @@ body {
 .song:hover {
 	background-color: rgb(102, 106, 133);
 	border-radius: 5px;
+}
+
+.song-img {
+	width: 40px;
+	margin-right: 1%;
+}
+
+.song-detail {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.song-name {
+	font-weight: 600;
+}
+
+.song-artist {
+	font-size: 14px;
+	color: rgb(172, 170, 170);
 }
 
 .queue {
