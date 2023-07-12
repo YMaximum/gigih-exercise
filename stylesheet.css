@@ -90,6 +90,7 @@ body {
 	margin: 0 auto;
 	padding: 1vh 0;
 	display: flex;
+	transition: all 0.2s;
 }
 
 .playlist:hover {
@@ -119,7 +120,7 @@ body {
 }
 
 .plus-icon {
-	align-self: center;
+	align-self: center;	
 	scale: 150%;
 	right: 0;
 }
@@ -141,6 +142,10 @@ body {
 	max-width: 25%;
 	color: white;
 	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	overflow: hidden;
 }
 
 .top-wrapper {
@@ -166,6 +171,7 @@ body {
 	padding-top: 1vh;
 	padding-bottom: 1vh;
 	display: flex;
+	transition: all 0.15s;
 }
 
 .song-wrapper:hover {
@@ -221,8 +227,52 @@ body {
 }
 
 .queue {
-	width: 95%;
-	margin: 0 auto;
+	margin: 1vh 2%;
+}
+
+.top-artists {
+	display: flex;
+	flex-direction: column;
+	margin: 1vh 2%;
+}
+
+.top-artists-items {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 1vh;
+}
+
+.top-artist {
+	background-color: rgb(39, 39, 48);
+	display: flex;
+	flex-direction: column;
+	border-radius: 10px;
+	padding: 10px 10px;
+	justify-content: space-evenly;
+	transition: all 0.2s;
+	height: 20vh;
+}
+
+.top-artist p:nth-child(2) {
+	font-weight: 600;
+}
+
+.top-artist p:nth-child(3) {
+	font-size: 14px;
+	color: rgb(172, 170, 170);
+}
+
+.top-artist:hover {
+	background-color: rgb(102, 106, 133);
+}
+
+.artist-img {
+	width: 120px;
+	border-radius: 50%;
+}
+
+.top-tracks {
+	margin: 1vh 2%;
 }
 
 footer {
