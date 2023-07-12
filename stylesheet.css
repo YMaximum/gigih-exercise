@@ -110,6 +110,13 @@ body {
 	width: 95%;
 	margin: 0 auto;
 	padding: 10px 1%;
+	display: flex;
+}
+
+.hashtag {
+	padding-left: 1.5%;
+	margin-right: 3%;
+	align-self: center;
 }
 
 .song {
@@ -128,6 +135,28 @@ body {
 .song:hover {
 	background-color: rgb(102, 106, 133);
 	border-radius: 5px;
+}
+
+.play-icon {
+	position: relative;
+	align-self: center;
+	margin-right: 2%;
+	visibility: hidden;
+	padding-left: 1%;
+}
+
+.song:hover .play-icon {
+	visibility: visible;
+}
+
+.song-number {
+	position: absolute;
+	visibility: visible;
+	color: rgb(172, 170, 170);
+}
+
+.song:hover .song-number {
+	visibility: hidden;
 }
 
 .song-img {
