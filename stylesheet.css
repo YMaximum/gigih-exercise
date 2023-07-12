@@ -63,6 +63,10 @@ body {
 	padding-top: 1vh;
 }
 
+.left-sidebar {
+	margin-left: 4%;
+}
+
 .playlists {
 	background-color: rgb(27, 27, 34);
 	color: white;
@@ -73,17 +77,51 @@ body {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
+	overflow: hidden;
+	position: relative;
+}
+
+.playlists:hover {
+	overflow: auto;
 }
 
 .playlist {
 	width: 95%;
 	margin: 0 auto;
-	padding: 5vh 0;
+	padding: 1vh 0;
+	display: flex;
 }
 
 .playlist:hover {
 	background-color: rgb(102, 106, 133);
 	border-radius: 5px;
+}
+
+.playlist-img {
+	width: 80px;
+	margin-left: 1%;
+	margin-right: 2%;
+}
+
+.playlist-details {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.playlist-details p:nth-child(1) {
+	font-weight: 600;
+}
+
+.playlist-details p:nth-child(2) {
+	font-size: 14px;
+	color: rgb(172, 170, 170);
+}
+
+.plus-icon {
+	align-self: center;
+	scale: 150%;
+	right: 0;
 }
 
 .song-wrapper {
@@ -108,7 +146,7 @@ body {
 .top-wrapper {
 	border-bottom: 1px solid grey;
 	width: 95%;
-	margin: 0 auto;
+	margin: 10px auto;
 	padding: 10px 1%;
 	display: flex;
 	position: sticky;
@@ -164,6 +202,7 @@ body {
 .song-img {
 	width: 40px;
 	margin-right: 1%;
+	border-radius: 5px;
 }
 
 .song-detail {
